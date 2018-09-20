@@ -1,0 +1,244 @@
+
+
+
+/*------------------------------------*\
+    Flaunt JS Navigation
+\*------------------------------------*/
+
+.nav {
+	/* position:relative;
+	display:inline-block;
+	font-size:14px;
+	font-weight:900;*/
+	
+}
+.nav-list {
+	/* text-align:left;*/
+	
+	
+}
+.nav-item {
+	float:left;
+	*display:inline;
+	zoom:1;
+	position:relative;
+	margin-right: 20px;
+	
+}
+.nav-item a {
+	display:block;
+	/*color:#FFF;
+	padding:15px 20px;
+	background:#7A1E61;
+	border-bottom:1px solid #8B2870;*/
+	font-family: Georgia; color: #333 ; text-transform: uppercase; font-size: 12px; text-decoration: none ; padding-bottom: 18px; 
+}
+.nav-item > a:hover {
+	border-bottom: 2px solid #55415f; padding-bottom: 16px;
+}
+.nav-item:hover .nav-submenu {
+	display:block;
+}
+/* Navigation submenu */
+.nav-submenu {
+	display:none;
+	position:absolute;
+	left:0;
+	width:180px;
+	    z-index: 999;
+}
+.nav-submenu-item{
+	margin-top: -40px;
+}
+
+.nav-submenu-item a {
+	background:#ccc;
+	border-bottom:1px solid #55415f;
+	display:block;
+	padding:15px;
+	text-align: left;
+	
+}
+.nav-submenu-item a:hover {
+	background-color: #55415f;
+	color: #fff;
+}
+/* Mobile navigation */
+.nav-mobile {
+	display:none; /* Hide from browsers that don't support media queries */
+	cursor:pointer;
+	position:absolute;
+	top:130px;
+	right:20px;
+	background:#3D3D3B url(../images/nav.svg) no-repeat center center;
+	background-size:18px;
+	height:50px;
+	width:50px;
+}
+/* Mobile navigation, clickable area for revealing <ul> */
+.nav-click {
+	position:absolute;
+	
+	top: -21px;
+	right:15px; 
+	
+	display:none;
+	border-left:1px solid #8B2870;
+	height:49px;
+	width:50px;
+	cursor:pointer;
+}
+.nav-click i {
+	display:block;
+	height:48px;
+	width:48px;
+	background:url(../images/drop.svg) no-repeat center center;
+	background-size:20px;
+}
+.nav-click:hover {
+	background-color:#6E1656;
+}
+.nav-rotate {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	t ransform:rotate(180deg);
+}
+
+/*------------------------------------*\
+    Media Queries
+\*------------------------------------*/
+@media screen and (max-width:320px){
+	menu{
+		float: none;
+		width: 100% /* this is imp property to make mob menu in full width*/
+	}
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:50px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+		margin-top: -18px;
+	}
+	.nav-item > a {
+		padding:0 180px 18px 15px;
+		
+	}
+	.nav-click {
+		display:block;
+		background-color: #8B2870;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+	
+
+} 
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	menu{
+		float: none;
+		width: 100% /* this is imp property to make mob menu in full width*/
+	}
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:50px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+		margin-top: -18px;
+	}
+	.nav-item > a {
+		padding:0 180px 18px 15px;
+		
+	}
+	.nav-click {
+		display:block;
+		background-color: #8B2870;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+	
+}
+
+@media screen and (min-width: 729px) and (max-width: 1024px){
+    
+menu{
+		float: none;
+		width: 100% /* this is imp property to make mob menu in full width*/
+	}
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:50px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+		margin-top: -18px;
+	}
+	.nav-item > a {
+		padding:0 180px 18px 15px;
+		
+	}
+	.nav-click {
+		display:block;
+		background-color: #8B2870;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+	
+}
+
+	
